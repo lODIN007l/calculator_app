@@ -177,21 +177,25 @@ class BotonTema extends StatelessWidget {
       child: Consumer<TemaEstado>(
         builder: (context, value, child) {
           return Container(
-              padding: const EdgeInsets.all(0.0),
+              padding: const EdgeInsets.all(20.0),
               margin: const EdgeInsets.all(10.0),
               decoration: BoxDecoration(
                 color: (value.darkModeG == false)
                     ? Colors.grey[300]
-                    : Color.fromRGBO(17, 19, 32, 1),
+                    : const Color.fromRGBO(17, 19, 32, 1),
                 borderRadius: const BorderRadius.all(Radius.circular(15.0)),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey[500]!,
+                      color: (value.darkModeG == false)
+                          ? Colors.grey[500]!
+                          : Color.fromRGBO(0, 0, 0, 0.1),
                       offset: const Offset(2.0, 2.0),
                       blurRadius: 8.0,
                       spreadRadius: 1.0),
-                  const BoxShadow(
-                      color: Colors.white,
+                  BoxShadow(
+                      color: (value.darkModeG == false)
+                          ? Colors.white
+                          : Color.fromRGBO(255, 255, 255, 0.1),
                       offset: Offset(-2.0, -2.0),
                       blurRadius: 8.0,
                       spreadRadius: 1.0),
@@ -229,7 +233,7 @@ class _PantallResultado extends StatelessWidget {
             margin: const EdgeInsets.all(10.0),
             decoration: BoxDecoration(
               color: (temaP.darkModeG == false)
-                  ? Colors.grey[300]
+                  ? Colors.grey[100]
                   : const Color.fromRGBO(26, 29, 49, 1),
               borderRadius: const BorderRadius.all(Radius.circular(15.0)),
               boxShadow: [
