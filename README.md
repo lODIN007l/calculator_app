@@ -6,7 +6,13 @@ Calculadora con estilo minimalista tanto en dark mode y en ligh mode
 
 dark mode 
 
-<img src="enlace" alt="alt text" style="width:300px;height:600px">
+<img src="https://github.com/lODIN007l/calculator_app/tree/main/screenshot/screnC1.png" alt="alt text" style="width:300px;height:600px">
+
+
+ligth mode 
+
+
+<img src="https://github.com/lODIN007l/calculator_app/tree/main/screenshot/screnC2.png" alt="alt text" style="width:300px;height:600px">
 
 
 
